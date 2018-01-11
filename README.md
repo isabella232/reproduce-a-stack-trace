@@ -17,7 +17,8 @@ repository listed and click it to turn on Travis builds for it.
 
 ## Simple stack trace
 
-https://samebug.io/exceptions/173939/java.lang.IndexOutOfBoundsException/index-256-size-256
+Original: https://samebug.io/exceptions/173939/java.lang.IndexOutOfBoundsException/index-256-size-256
+Reproduced: https://travis-ci.org/samebug/reproduce-a-stack-trace/builds/327664326#L485-L489
 
 ## Initialise project
 
@@ -42,3 +43,10 @@ test {
     }
 }
 ```
+
+## Get the link to the stack trace
+
+Visit your failed build at Travis. Scroll down to the stack trace, click on its
+first row, then holding down the shift key click on its last row. The link in
+the browser will change to include an anchor of the form
+`#L<first-line-number>-L<last-line-number>`.
