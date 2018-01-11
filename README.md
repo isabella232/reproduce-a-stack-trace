@@ -50,3 +50,7 @@ Visit your failed build at Travis. Scroll down to the stack trace, click on its
 first row, then holding down the shift key click on its last row. The link in
 the browser will change to include an anchor of the form
 `#L<first-line-number>-L<last-line-number>`.
+
+## A more sophisticated stack trace
+
+Original: https://samebug.io/exceptions/2523863/java.lang.IllegalArgumentException/state-should-be-count
