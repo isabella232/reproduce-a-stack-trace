@@ -54,3 +54,4 @@ the browser will change to include an anchor of the form
 ## A more sophisticated stack trace
 
 Original: https://samebug.io/exceptions/2523863/java.lang.IllegalArgumentException/state-should-be-count
+Reproduced: https://travis-ci.org/samebug/reproduce-a-stack-trace/jobs/327721523#L512-L538
