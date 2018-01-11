@@ -29,3 +29,16 @@ gradle init --type java-library
 It will create a minimal java project. All you have to do is change
 `src/main/java/Library.java` to contain your code that throws the exception you
 want.
+
+Edit your `build.gradle` file to include this snippet. It will make gradle
+print the full stack trace on the console. By default, it prints only a short
+form of the stack trace and the full report is available in a separate file
+which is difficult to access on the Travis server.
+```
+test {
+    testLogging {
+        events "failed"
+        exceptionFormat "full"
+    }
+}
+```
