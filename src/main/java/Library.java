@@ -11,16 +11,11 @@ import java.net.UnknownHostException;
 
 public class Library {
     public boolean someLibraryMethod() {
-        try {
-            // Based on https://jira.mongodb.org/browse/JAVA-2434
-            MongoClient mongo = new MongoClient("localhost", 27017);
-            DB db = mongo.getDB("testdb");
-            DBCollection collection = db.getCollection("dummyColl");
-            collection.insert(Collections.emptyList());
-            return true;
-        }
-        catch (UnknownHostException uhe) {
-            throw new RuntimeException(uhe);
-        }
+        // Based on https://jira.mongodb.org/browse/JAVA-2434
+        MongoClient mongo = new MongoClient("localhost", 27017);
+        DB db = mongo.getDB("testdb");
+        DBCollection collection = db.getCollection("dummyColl");
+        collection.insert(Collections.emptyList());
+        return true;
     }
 }
