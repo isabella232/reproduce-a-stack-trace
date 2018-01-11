@@ -14,3 +14,7 @@ but they are reasonable.
 Go to [your profile page](https://travis-ci.org/profile/) and select the
 organization (or yourself) where you created the repository. Then find the
 repository listed and click it to turn on Travis builds for it.
+
+## Simple stack trace
+
+https://samebug.io/exceptions/173939/java.lang.IndexOutOfBoundsException/index-256-size-256
